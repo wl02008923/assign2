@@ -131,7 +131,7 @@ void draw(){
         tmp ++;
       }
       //hp's maximize
-      if(blood > 230){
+      if(blood >= 230){
         tmp = 10;
       }
       //decrease hp
