@@ -90,7 +90,7 @@ void draw(){
       float meY = 240+upDown;
       //fighter's place
       image(fighter,meX,meY);
-      //background's extreme place
+      //background's extreme line
       if(meX < 10){
         leftRight = -570;
       } 
@@ -114,7 +114,7 @@ void draw(){
       }
       if(enemyX > 640){
         enemyX = 0;
-        enemyY = meY;
+        enemyY = random(20,420);
       }
       //treasure's place     
       image(treasure,trX,trY);
@@ -141,7 +141,7 @@ void draw(){
         tmp -= 2;
       }
       //gameover
-      if(blood <= 50){ 
+      if(blood < 50){ 
         gameState = end;
       }
       break;
